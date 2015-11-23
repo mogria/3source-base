@@ -2,6 +2,7 @@ FROM alpine:latest
 
 MAINTAINER "Mogria" <m0gr14@gmail.com>
 
+ENV RUN_AS 0
 USER root
 WORKDIR /tmp
 
