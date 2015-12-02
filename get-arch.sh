@@ -3,7 +3,7 @@
 arch="$(apk --print-arch)"
 
 if [ "$arch" = "x86_64" ]; then
-    echo "amd64"
+    echo "$1"
 else
-    echo "$arch"
+    echo "$2"
 fi
