@@ -7,11 +7,10 @@ if [ "$uid" -eq 0 ]; then
 else
     user=generic-user
     addgroup -g "$uid" "$user"
-    adduser -D -S -u "$uid" -G "$user" "$user"
+    adduser -h "$HOME" -D -S -u "$uid" -G "$user" "$user"
 fi
 
 if [ -z "$1" ]; then
-    echo "no command given, running /bin/sh"
     gosu "$user" /bin/sh
 else
     gosu "$user" "$@"
