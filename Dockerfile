@@ -18,7 +18,6 @@ RUN chmod +x /usr/bin/get-arch.sh && \
     chmod +x /usr/bin/umask-wrapper.sh && \
     chmod +x /usr/bin/container-user.sh && \
     chmod +x /usr/bin/gosu && \
-    rm /usr/bin/get-arch.sh && \
     mkdir -p "$HOME"
 
 
